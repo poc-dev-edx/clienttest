@@ -1,10 +1,9 @@
-package ztr.com.clientest;
+package my.com.clientest;
 
-import java.util.List;
-import javax.annotation.Generated;
+
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.robohorse.robopojogenerator")
+
 public class List{
 
 	@SerializedName("pagination")

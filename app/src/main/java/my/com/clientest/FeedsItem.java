@@ -1,4 +1,4 @@
-package ztr.com.clientest;
+package my.com.clientest;
 
 import com.google.gson.annotations.SerializedName;
 

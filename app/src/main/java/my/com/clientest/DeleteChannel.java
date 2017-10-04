@@ -1,17 +1,14 @@
-package ztr.com.clientest;
+package my.com.clientest;
 
-import java.util.List;
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.robohorse.robopojogenerator")
-public class UpdateChanel{
+import java.util.List;
+
+
+public class DeleteChannel{
 
 	@SerializedName("elevation")
 	private Object elevation;
-
-	@SerializedName("metadata")
-	private Object metadata;
 
 	@SerializedName("last_entry_id")
 	private Object lastEntryId;
@@ -19,17 +16,14 @@ public class UpdateChanel{
 	@SerializedName("latitude")
 	private Object latitude;
 
+	@SerializedName("name")
+	private String name;
+
 	@SerializedName("description")
 	private Object description;
 
 	@SerializedName("created_at")
 	private String createdAt;
-
-	@SerializedName("tags")
-	private List<Object> tags;
-
-	@SerializedName("name")
-	private String name;
 
 	@SerializedName("ranking")
 	private int ranking;
@@ -37,14 +31,14 @@ public class UpdateChanel{
 	@SerializedName("id")
 	private int id;
 
-	@SerializedName("api_keys")
-	private List<ApiKeysItem> apiKeys;
-
 	@SerializedName("longitude")
 	private Object longitude;
 
 	@SerializedName("username")
 	private String username;
+
+	@SerializedName("tags")
+	private List<Object> tags;
 
 	public void setElevation(Object elevation){
 		this.elevation = elevation;
@@ -52,14 +46,6 @@ public class UpdateChanel{
 
 	public Object getElevation(){
 		return elevation;
-	}
-
-	public void setMetadata(Object metadata){
-		this.metadata = metadata;
-	}
-
-	public Object getMetadata(){
-		return metadata;
 	}
 
 	public void setLastEntryId(Object lastEntryId){
@@ -78,6 +64,14 @@ public class UpdateChanel{
 		return latitude;
 	}
 
+	public void setName(String name){
+		this.name = name;
+	}
+
+	public String getName(){
+		return name;
+	}
+
 	public void setDescription(Object description){
 		this.description = description;
 	}
@@ -92,22 +86,6 @@ public class UpdateChanel{
 
 	public String getCreatedAt(){
 		return createdAt;
-	}
-
-	public void setTags(List<Object> tags){
-		this.tags = tags;
-	}
-
-	public List<Object> getTags(){
-		return tags;
-	}
-
-	public void setName(String name){
-		this.name = name;
-	}
-
-	public String getName(){
-		return name;
 	}
 
 	public void setRanking(int ranking){
@@ -126,14 +104,6 @@ public class UpdateChanel{
 		return id;
 	}
 
-	public void setApiKeys(List<ApiKeysItem> apiKeys){
-		this.apiKeys = apiKeys;
-	}
-
-	public List<ApiKeysItem> getApiKeys(){
-		return apiKeys;
-	}
-
 	public void setLongitude(Object longitude){
 		this.longitude = longitude;
 	}
@@ -150,23 +120,29 @@ public class UpdateChanel{
 		return username;
 	}
 
+	public void setTags(List<Object> tags){
+		this.tags = tags;
+	}
+
+	public List<Object> getTags(){
+		return tags;
+	}
+
 	@Override
  	public String toString(){
 		return 
-			"UpdateChanel{" + 
+			"DeleteChannel{" + 
 			"elevation = '" + elevation + '\'' + 
-			",metadata = '" + metadata + '\'' + 
 			",last_entry_id = '" + lastEntryId + '\'' + 
 			",latitude = '" + latitude + '\'' + 
+			",name = '" + name + '\'' + 
 			",description = '" + description + '\'' + 
 			",created_at = '" + createdAt + '\'' + 
-			",tags = '" + tags + '\'' + 
-			",name = '" + name + '\'' + 
 			",ranking = '" + ranking + '\'' + 
 			",id = '" + id + '\'' + 
-			",api_keys = '" + apiKeys + '\'' + 
 			",longitude = '" + longitude + '\'' + 
 			",username = '" + username + '\'' + 
+			",tags = '" + tags + '\'' + 
 			"}";
 		}
 }

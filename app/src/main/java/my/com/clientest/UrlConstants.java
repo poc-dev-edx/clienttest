@@ -1,4 +1,4 @@
-package ztr.com.clientest;
+package my.com.clientest;
 
 
 

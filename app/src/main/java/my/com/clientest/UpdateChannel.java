@@ -1,11 +1,11 @@
-package ztr.com.clientest;
+package my.com.clientest;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
 
-public class CreateChannel {
+public class UpdateChannel {
 
 	@SerializedName("elevation")
 	private Object elevation;
@@ -153,7 +153,7 @@ public class CreateChannel {
 	@Override
  	public String toString(){
 		return 
-			"Response{" + 
+			"UpdateChanel{" + 
 			"elevation = '" + elevation + '\'' + 
 			",metadata = '" + metadata + '\'' + 
 			",last_entry_id = '" + lastEntryId + '\'' + 
