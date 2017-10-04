@@ -4,13 +4,13 @@ package my.com.clientest;
 import com.google.gson.annotations.SerializedName;
 
 
-public class List{
+public class ChannelList {
 
 	@SerializedName("pagination")
 	private Pagination pagination;
 
 	@SerializedName("channels")
-	private List<ChannelsItem> channels;
+	private ChannelList<ChannelsItem> channels;
 
 	public void setPagination(Pagination pagination){
 		this.pagination = pagination;
@@ -20,11 +20,11 @@ public class List{
 		return pagination;
 	}
 
-	public void setChannels(List<ChannelsItem> channels){
+	public void setChannels(ChannelList<ChannelsItem> channels){
 		this.channels = channels;
 	}
 
-	public List<ChannelsItem> getChannels(){
+	public ChannelList<ChannelsItem> getChannels(){
 		return channels;
 	}
 
