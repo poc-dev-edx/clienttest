@@ -18,5 +18,14 @@ public class UrlConstants {
     public final static String UPDATE_CHANNEL_FEED = "https://api.thingspeak.com/update.json";//api_key=XXXXXXXXXXXXXXXX field1=73
     public final static String GET_CHANNEL_FEED = "https://api.thingspeak.com/channels/9/feeds.json?results=2";
     public final static String GET_CHANNEL_FIELD_FEED = "https://api.thingspeak.com/channels/9/fields/1.json?results=2";
+    
+    OkHttpClient client = new OkHttpClient();
+
+Request request = new Request.Builder()
+  .url("https://api.thingspeak.com/channels/1417/status.json")
+  .get()
+  .build();
+
+Response response = client.newCall(request).execute();
 
 }
