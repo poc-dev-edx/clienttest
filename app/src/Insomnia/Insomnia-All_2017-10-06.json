@@ -1,0 +1,146 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2017-10-06T11:45:18.976Z",
+	"__export_source": "insomnia.desktop.app:v5.8.4",
+	"resources": [
+		{
+			"_id": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"parentId": null,
+			"modified": 1507285348219,
+			"created": 1507285348219,
+			"name": "Insomnia",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_608ef156c6974014963a7c542f0c9f8d",
+			"parentId": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"modified": 1507285348224,
+			"created": 1507285348224,
+			"name": "Base Environment",
+			"data": {},
+			"color": null,
+			"isPrivate": false,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_cfcc48062acd4f2199a7c7a0fc9297fb",
+			"parentId": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"modified": 1507285348220,
+			"created": 1507285348220,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_78be044c9533421aad1ef1d167fda445",
+			"parentId": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"modified": 1507286147993,
+			"created": 1507286142161,
+			"url": "https://api.thingspeak.com/update?api_key=KSLQ2CVK1U1A6689&field1=0",
+			"name": "Update a Channel Feed",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1507286142161,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_950b8bdb55d14782a27a70ac51446d4f",
+			"parentId": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"modified": 1507290219483,
+			"created": 1507286196617,
+			"url": "https://api.thingspeak.com/channels/341741/feeds.json?api_key=3JPYOWT00TJD5T86&results=2",
+			"name": "Get a Channel Feed",
+			"description": "",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1507286196617,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_5f9dca2829a54b11b978191b70c1bfed",
+			"parentId": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"modified": 1507290206984,
+			"created": 1507286236361,
+			"url": "https://api.thingspeak.com/channels/341741/fields/1.json?api_key=3JPYOWT00TJD5T86&results=2",
+			"name": "Get a Channel Field",
+			"description": "",
+			"method": "GET",
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2ec206e5817448579c030f321692b030"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1507286236361,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "req_07002f6365c646f48341fea52632170d",
+			"parentId": "wrk_76b42b9e108340c4a9c4995b3bb07c4e",
+			"modified": 1507286269359,
+			"created": 1507286265455,
+			"url": " https://api.thingspeak.com/channels/341741/status.json?api_key=3JPYOWT00TJD5T86",
+			"name": "Get Channel Status Updates",
+			"description": "",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1507286265455,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"_type": "request"
+		},
+		{
+			"_id": "env_60000ecb91fd4da3b06142158ebd6b26",
+			"parentId": "env_608ef156c6974014963a7c542f0c9f8d",
+			"modified": 1507290241810,
+			"created": 1507285644130,
+			"name": "ThingSpeak",
+			"data": {},
+			"color": "#7d69cb",
+			"isPrivate": true,
+			"_type": "environment"
+		}
+	]
+}

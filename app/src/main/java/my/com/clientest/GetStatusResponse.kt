@@ -3,7 +3,8 @@ package my.com.clientest
 import com.google.gson.annotations.SerializedName
 
 
-data class GetStatusResponse(
+data class GetStatusResponse
+(
 
 	@field:SerializedName("channel")
 	val channel: Channel? = null,
